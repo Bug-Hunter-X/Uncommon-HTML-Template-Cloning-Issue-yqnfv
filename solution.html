@@ -1,0 +1,12 @@
+<p>The solution demonstrates the correct use of `cloneNode(true)` to clone the template content, ensuring the inner content is also copied.</p><pre><code>&lt;template id="myTemplate">&lt;div&gt;Hello, world!&lt;/div&gt;&lt;/template&gt;
+
+&lt;div id="app">&lt;/div&gt;
+
+&lt;script&gt;
+  const template = document.getElementById('myTemplate');
+  const app = document.getElementById('app');
+
+  // Correct cloning of the template content
+  const clone = template.content.cloneNode(true); // Clones the template element and its content
+  app.appendChild(clone);
+&lt;/script&gt;</code>
